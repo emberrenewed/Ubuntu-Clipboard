@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="1280" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1F1F1F"/>
+      <stop offset="1" stop-color="#0E0E0E"/>
+    </linearGradient>
+    <linearGradient id="kurd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#ED1B24"/>
+      <stop offset="50%"  stop-color="#FFCC00"/>
+      <stop offset="100%" stop-color="#009A44"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFAFA"/>
+      <stop offset="1" stop-color="#E8E8E8"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#E0A800"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="480" fill="url(#bg)"/>
+
+  <!-- Decorative tricolor stripe -->
+  <rect x="0" y="0" width="1280" height="6" fill="url(#kurd)"/>
+  <rect x="0" y="474" width="1280" height="6" fill="url(#kurd)"/>
+
+  <!-- Floating sun -->
+  <g transform="translate(1080 110)" filter="url(#glow)" opacity="0.95">
+    <g>
+      <g id="rays">
+        <polygon points="0,-95 -7,-50 7,-50" fill="url(#sun)"/>
+      </g>
+      <use href="#rays" transform="rotate( 17.14)"/>
+      <use href="#rays" transform="rotate( 34.29)"/>
+      <use href="#rays" transform="rotate( 51.43)"/>
+      <use href="#rays" transform="rotate( 68.57)"/>
+      <use href="#rays" transform="rotate( 85.71)"/>
+      <use href="#rays" transform="rotate(102.86)"/>
+      <use href="#rays" transform="rotate(120.00)"/>
+      <use href="#rays" transform="rotate(137.14)"/>
+      <use href="#rays" transform="rotate(154.29)"/>
+      <use href="#rays" transform="rotate(171.43)"/>
+      <use href="#rays" transform="rotate(188.57)"/>
+      <use href="#rays" transform="rotate(205.71)"/>
+      <use href="#rays" transform="rotate(222.86)"/>
+      <use href="#rays" transform="rotate(240.00)"/>
+      <use href="#rays" transform="rotate(257.14)"/>
+      <use href="#rays" transform="rotate(274.29)"/>
+      <use href="#rays" transform="rotate(291.43)"/>
+      <use href="#rays" transform="rotate(308.57)"/>
+      <use href="#rays" transform="rotate(325.71)"/>
+      <use href="#rays" transform="rotate(342.86)"/>
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0" to="360" dur="60s" repeatCount="indefinite"/>
+    </g>
+    <circle r="42" fill="url(#sun)"/>
+  </g>
+
+  <!-- Clipboard mark -->
+  <g transform="translate(160 110)">
+    <rect x="0" y="0" width="180" height="220" rx="16" fill="url(#paper)"/>
+    <rect x="36" y="-12" width="108" height="24" rx="8" fill="#FFFFFF"/>
+    <rect x="56" y="-20" width="68" height="22" rx="6" fill="#ED1B24"/>
+    <rect x="20" y="40" width="140" height="10" rx="5" fill="#ED1B24" opacity="0.85"/>
+    <rect x="20" y="62" width="120" height="10" rx="5" fill="#9A9A9A"/>
+    <rect x="20" y="84" width="140" height="10" rx="5" fill="#9A9A9A"/>
+    <rect x="20" y="106" width="100" height="10" rx="5" fill="#9A9A9A"/>
+    <rect x="20" y="128" width="140" height="10" rx="5" fill="#009A44" opacity="0.85"/>
+    <rect x="20" y="150" width="80" height="10" rx="5" fill="#9A9A9A"/>
+  </g>
+
+  <!-- Title block -->
+  <g font-family="Inter,SF Pro Display,Ubuntu,sans-serif" fill="#F2F2F2">
+    <text x="400" y="178" font-size="84" font-weight="900" letter-spacing="-2">Clipd</text>
+    <text x="400" y="226" font-size="28" font-weight="500" fill="#B8B8B8">
+      Native Ubuntu clipboard manager
+    </text>
+    <text x="400" y="258" font-size="18" font-weight="400" fill="#8C8C8C">
+      GTK 4 · Libadwaita · GNOME-native · Wayland &amp; X11
+    </text>
+
+    <!-- Pills -->
+    <g font-size="16" font-weight="700">
+      <rect x="400" y="300" width="118" height="34" rx="17" fill="#ED1B24"/>
+      <text x="425" y="323" fill="#FFFFFF">Kurdish UI</text>
+      <rect x="528" y="300" width="118" height="34" rx="17" fill="#FFCC00"/>
+      <text x="555" y="323" fill="#1A1A1A">Super+B</text>
+      <rect x="656" y="300" width="138" height="34" rx="17" fill="#009A44"/>
+      <text x="676" y="323" fill="#FFFFFF">Auto-start</text>
+    </g>
+
+    <text x="400" y="378" font-size="14" font-weight="500" fill="#7A7A7A">
+      Created by CodeAhmad · github.com/emberrenewed
+    </text>
+  </g>
+
+  <!-- KURDISTAN watermark -->
+  <text x="640" y="445" font-family="Inter,sans-serif" font-size="14"
+        font-weight="800" letter-spacing="6" fill="#666" text-anchor="middle">
+    K  U  R  D  I  S  T  A  N
+  </text>
+</svg>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360">
+  <defs>
+    <linearGradient id="winBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#242424"/>
+      <stop offset="1" stop-color="#1B1B1B"/>
+    </linearGradient>
+    <linearGradient id="kurd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#ED1B24"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#009A44"/>
+    </linearGradient>
+  </defs>
+
+  <!-- English window -->
+  <g transform="translate(20 20)">
+    <rect width="520" height="320" rx="14" fill="url(#winBg)" stroke="#333" stroke-width="1"/>
+    <rect width="520" height="40" rx="14" fill="#1B1B1B"/>
+    <text x="260" y="26" font-family="Ubuntu,sans-serif" font-size="13" font-weight="600"
+          fill="#B8B8B8" text-anchor="middle">Clipd</text>
+
+    <g font-family="Ubuntu,sans-serif" fill="#E8E8E8" font-size="14">
+      <text x="32" y="76">All</text>
+      <text x="32" y="110">Pinned</text>
+      <text x="32" y="144">Favorites</text>
+      <text x="32" y="178">Text</text>
+      <text x="32" y="212">Code</text>
+      <text x="32" y="246">URLs</text>
+    </g>
+
+    <text x="200" y="100" font-family="Ubuntu,sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">
+      Clipboard History
+    </text>
+    <text x="200" y="124" font-family="Ubuntu,sans-serif" font-size="13" fill="#9A9A9A">
+      Search clipboard…
+    </text>
+
+    <text x="260" y="280" font-family="Inter,sans-serif" font-size="20"
+          font-weight="900" letter-spacing="4" fill="#ED1B24" text-anchor="middle">
+      KURDISTAN
+    </text>
+    <rect x="160" y="290" width="200" height="3" rx="2" fill="url(#kurd)"/>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(550 160)">
+    <path d="M0 0 L40 0 M30 -10 L40 0 L30 10" stroke="#FFCC00" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="-12" y="-18" font-family="Ubuntu,sans-serif" font-size="13" fill="#FFCC00" font-weight="600">
+      Super+B
+    </text>
+  </g>
+
+  <!-- Sorani window -->
+  <g transform="translate(610 20)" direction="rtl">
+    <rect width="470" height="320" rx="14" fill="url(#winBg)" stroke="#333" stroke-width="1"/>
+    <rect width="470" height="40" rx="14" fill="#1B1B1B"/>
+    <text x="235" y="26" font-family="Ubuntu,sans-serif" font-size="13" font-weight="600"
+          fill="#B8B8B8" text-anchor="middle">کلیپد</text>
+
+    <g font-family="Ubuntu,sans-serif" fill="#E8E8E8" font-size="14" text-anchor="end">
+      <text x="438" y="76">هەموو</text>
+      <text x="438" y="110">قایمکراو</text>
+      <text x="438" y="144">دڵخوازەکان</text>
+      <text x="438" y="178">دەق</text>
+      <text x="438" y="212">کۆد</text>
+      <text x="438" y="246">بەستەرەکان</text>
+    </g>
+
+    <text x="270" y="100" font-family="Ubuntu,sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="end">
+      مێژووی کلیپبۆرد
+    </text>
+    <text x="270" y="124" font-family="Ubuntu,sans-serif" font-size="13" fill="#9A9A9A" text-anchor="end">
+      گەڕان لە کلیپبۆرد…
+    </text>
+
+    <text x="235" y="280" font-family="Inter,sans-serif" font-size="20"
+          font-weight="900" letter-spacing="4" fill="#ED1B24" text-anchor="middle">
+      کوردستان
+    </text>
+    <rect x="135" y="290" width="200" height="3" rx="2" fill="url(#kurd)"/>
+  </g>
+</svg>
