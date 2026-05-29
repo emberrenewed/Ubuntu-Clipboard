@@ -10,7 +10,7 @@
 
 <br/>
 
-[![Download .deb](https://img.shields.io/github/v/release/emberrenewed/Ubuntu-Clipboard?style=for-the-badge&logo=ubuntu&logoColor=white&label=Download%20.deb&color=E95420)](https://github.com/emberrenewed/Ubuntu-Clipboard/releases/latest)
+[![Download .deb](https://img.shields.io/github/v/release/emberrenewed/Linux-Clipboard?style=for-the-badge&logo=ubuntu&logoColor=white&label=Download%20.deb&color=E95420)](https://github.com/emberrenewed/Linux-Clipboard/releases/latest)
 [![Stack](https://img.shields.io/badge/Stack-GTK4%20%2B%20Libadwaita-orange?style=for-the-badge&logo=gtk)](#)
 [![Wayland](https://img.shields.io/badge/Wayland-ready-blueviolet?style=for-the-badge&logo=wayland)](#)
 
@@ -28,7 +28,7 @@
 
 The easiest way to run Clipd on **any** Linux desktop — GNOME, KDE, sway —
 on Wayland or X11. Download `clipd.flatpak` from the
-[latest release](https://github.com/emberrenewed/Ubuntu-Clipboard/releases/latest),
+[latest release](https://github.com/emberrenewed/Linux-Clipboard/releases/latest),
 then:
 
 ```bash
@@ -53,7 +53,7 @@ sudo apt install -y python3-gi gir1.2-gtk-4.0 gir1.2-adw-1 \
   python3-pil libnotify-bin
 
 cd /tmp
-wget https://github.com/emberrenewed/Ubuntu-Clipboard/releases/latest/download/clipd_0.1.0_all.deb
+wget https://github.com/emberrenewed/Linux-Clipboard/releases/latest/download/clipd_0.1.0_all.deb
 sudo apt install -y ./clipd_0.1.0_all.deb
 
 clipd-setup
@@ -279,6 +279,6 @@ Proprietary © 2026 CodeAhmad. Free to install and use; redistribution, modifica
 
 #### ⭐ If Clipd makes your day a little smoother, give the repo a star.
 
-[![Star on GitHub](https://img.shields.io/github/stars/emberrenewed/Ubuntu-Clipboard?style=for-the-badge&logo=github&color=FFCC00&labelColor=1B1B1B)](https://github.com/emberrenewed/Ubuntu-Clipboard/stargazers)
+[![Star on GitHub](https://img.shields.io/github/stars/emberrenewed/Linux-Clipboard?style=for-the-badge&logo=github&color=FFCC00&labelColor=1B1B1B)](https://github.com/emberrenewed/Linux-Clipboard/stargazers)
 
 </div>
