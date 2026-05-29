@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="Clipd — Native Ubuntu Clipboard Manager" width="100%"/>
+<img src="assets/hero.svg" alt="Clipd — Native Linux Clipboard Manager" width="100%"/>
 
 # Clipd
 
-### A native, GNOME-quality clipboard manager for Ubuntu.
+### A native, GNOME-quality clipboard manager for Linux.
 
 #### Built with GTK 4 · Libadwaita · Pure native UX. No Electron.
 
@@ -22,7 +22,20 @@
 
 ---
 
-## ⚡ Install on Ubuntu 24.04+
+## ⚡ Install
+
+### Flatpak (any Linux distro)
+
+The easiest way to run Clipd on **any** Linux desktop — GNOME, KDE, sway —
+on Wayland or X11:
+
+```bash
+flatpak install -y flathub org.gnome.Platform//48 org.gnome.Sdk//48
+flatpak install --user io.github.clipd.Clipd
+flatpak run io.github.clipd.Clipd
+```
+
+### Ubuntu / Debian (.deb)
 
 Copy and paste this whole block into your terminal:
 
@@ -42,21 +55,29 @@ clipd-setup
 `clipd-setup` runs once per user — it enables the background daemon at
 login and registers the **Super + B** shortcut for you automatically.
 
+### Fedora
+
+```bash
+sudo dnf install -y python3-gobject gtk4 libadwaita \
+  libayatana-appindicator-gtk3 wl-clipboard xclip \
+  libnotify python3-pillow
+```
+
+### Arch / Manjaro
+
+```bash
+sudo pacman -S --needed python-gobject gtk4 libadwaita \
+  libayatana-appindicator wl-clipboard xclip \
+  libnotify python-pillow
+```
+
 Press **Super + B** to open Clipd, or type `clipd` in a terminal.
 
 > **Did Super+B not work the first time?**
-> Log out and log back in (or reboot) so GNOME Shell picks up the new
-> shortcut. Or open **Settings → Keyboard → View and Customize Shortcuts
-> → Custom Shortcuts → Open Clipd** and re-set the binding manually.
-
----
-## 🧹 Uninstall
-
-```bash
-systemctl --user disable --now clipd.service
-sudo apt remove -y clipd
-rm -rf ~/.local/share/clipd ~/.cache/clipd ~/.config/clipd ~/.local/state/clipd
-```
+> Log out and log back in (or reboot) so your desktop picks up the new
+> shortcut. On GNOME you can also open **Settings → Keyboard → View and
+> Customize Shortcuts → Custom Shortcuts → Open Clipd** and re-set the
+> binding manually.
 
 ---
 
@@ -167,6 +188,21 @@ Re-run the install block above. `apt` upgrades the package and restarts the daem
 
 ---
 
+## 🧹 Uninstall
+
+```bash
+# Flatpak
+flatpak uninstall --user io.github.clipd.Clipd
+
+# Ubuntu / Debian (.deb)
+systemctl --user disable --now clipd.service
+sudo apt remove -y clipd
+
+# Remove stored history (any install method)
+rm -rf ~/.local/share/clipd ~/.cache/clipd ~/.config/clipd ~/.local/state/clipd
+```
+
+---
 
 ## 🐛 Troubleshooting
 
